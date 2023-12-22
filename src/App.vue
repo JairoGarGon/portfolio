@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view></router-view>
   </div>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Pacifico&display=swap" rel="stylesheet">
@@ -9,8 +10,24 @@
 
 <script>
 
+
+
 export default {
   name: 'App',
+  data() {
+    return {
+
+    };
+  },
+  components: {
+
+        },
+  watch: {
+
+  },
+  methods: {
+
+  },
 }
 </script>
 
@@ -20,6 +37,13 @@ export default {
   padding: 0 !important;
   box-sizing: border-box;
   background-color: var(--color0);
+  scroll-behavior: smooth !important;
+
+}
+/* revisar esto */
+body{
+  /* cursor: url('../src/assets/mano.svg'), auto !important; */
+
 }
 :root{
   --fuenteTitulos: "Pacifico";
@@ -28,21 +52,23 @@ export default {
   --color1:#0c356a;
   --color2:#0174be;
   --color3:#ffc436;
-  --color4:#fff0ce;
+  --color4:#cae2ff;
   --sombraTexto:  0 1px 0 #ccc,
-                  0 2px 0 #cae2ff,
-                  0 3px 0 var(--color2),
-                  0 4px 0 var(--color1),
-                  0 6px 1px rgba(0,0,0,.1),
-                  0 0 5px rgba(0,0,0,.1),
-                  0 1px 3px rgba(0,0,0,.3),
-                  0 3px 5px rgba(0,0,0,.2),
-                  0 5px 10px rgba(0,0,0,.25),
-                  0 10px 10px rgba(0,0,0,.2),
-                  0 15px 15px rgba(0,0,0,.15)
-                  ;
-   --sombraCaja:inset -7px -7px 17px rgba(255,255,255,0.6),
-				inset 7px 7px 17px rgba(70,70,70,0.15);               
-   --borde:0.2px solid var(--color2);	
+  0 2px 0 #cae2ff,
+  0 3px 0 var(--color2),
+  0 4px 0 var(--color1),
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 15px 15px rgba(0,0,0,.15)
+  ;
+  --sombraCaja:inset -7px -7px 17px rgba(255,255,255,0.6),
+  inset 7px 7px 17px rgba(70,70,70,0.15);               
+  --borde:0.2px solid var(--color2);	
+  --sombraCaja2:-5px -5px 12px rgba(255,255,255,0.6),
+            5px 5px 12px rgba(70,70,70,0.15);
 }
 </style>
