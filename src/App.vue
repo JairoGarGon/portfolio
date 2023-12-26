@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view></router-view>
   </div>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Pacifico&display=swap" rel="stylesheet">
 </template>
 
 <script>
@@ -42,7 +42,9 @@ export default {
                   0 15px 15px rgba(0,0,0,.15)
                   ;
    --sombraCaja:inset -7px -7px 17px rgba(255,255,255,0.6),
-				inset 7px 7px 17px rgba(70,70,70,0.15);               
+				inset 7px 7px 17px rgba(70,70,70,0.15);    
+   --sombraSuave: -4px -4px 14px rgba(255, 255, 255, 0.6),
+              4px 4px 14px rgba(70, 70, 70, 0.15);           
    --borde:0.2px solid var(--color2);	
 }
 </style>

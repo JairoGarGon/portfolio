@@ -3,16 +3,16 @@
     <h1 class="texto1">Jairo García González</h1>
     <h2 class="texto2">Front End Developer</h2>
     <router-link class="botonInicio" to="/conoceme">Conozcámonos</router-link>
-    <img class="img1" src="../assets/1.png" alt="diseño papeles">
-    <img  class="img2" src="../assets/2.png" alt="diseño escritorio">
-    <img  class="img3" src="../assets/3.png" alt="diseño lampara">
-    <img  class="img4" src="../assets/4.png" alt="diseño mueble">
+    <img class="img1" src="../assets/1.webp" alt="diseño papeles">
+    <img  class="img2" src="../assets/2.webp" alt="diseño escritorio">
+    <img  class="img3" src="../assets/3.webp" alt="diseño lampara">
+    <img  class="img4" src="../assets/4.webp" alt="diseño mueble">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
+  name: 'HomeComponente',
   components: {}
 }
 </script>
@@ -86,23 +86,23 @@ export default {
 .img1{
   width: 80vw;
   animation: mostrarPapeles 2s linear;
-  bottom: 40vh;
+  bottom: 25vh;
 }
 .img2{
-  width: 80vw;
+  width: 200vw;
   bottom: 0;
   animation: mostrarEscritorio 2s linear;
 }
 .img3{
-  width: 25vw;
-  right: 10vw;
+  width: 50vw;
+  right: -30vw;
   bottom: 0;
   animation: mostrarLampara 2s linear;
 }
 .img4{
-  width: 25vw;
+  width: 55vw;
   bottom: 0;
-  left: 10vw;
+  left: -20vw;
   animation: mostrarMueble 2s linear;
 }
 
@@ -175,41 +175,51 @@ export default {
 
 /* Tablet */
 @media screen and (min-width: 471px) and (max-width: 800px) {
-.inicio {
-  background-size: 100vw;
-}
-.texto1 {
-  font-size: 3.5rem;
-  padding-top: 18vh !important;
+  .texto1 {
+    font-size: 4rem;
+    padding-top: 18vh !important;
+  }
+
+  .texto2 {
+    padding-top: 4vh !important;
+    font-size: 3rem;
+  }
+
+  .botonInicio {
+    width: 35vw;
+    margin: 4vh auto !important;
+  }
 }
 
-.texto2 {
-  padding-top: 8vh !important;
-  font-size: 2.5rem;
-}
-
-.botonInicio {
-  width: 35vw;
-  margin: 10vh auto !important;
-}
-}
 @media screen and (min-width: 801px) {
-.inicio {
-  background-size: 100vw;
-}
-.texto1 {
-  font-size: 7rem;
-  padding-top: 15vh !important;
-}
+  .texto1 {
+    font-size: 5rem;
+    padding-top: 6vh !important;
+  }
+  
+  .texto2 {
+    padding-top: 2vh !important;
+    font-size: 4rem;
+  }
 
-.texto2 {
-  padding-top: 5vh !important;
-  font-size: 5rem;
-}
-
-.botonInicio {
-  width: 30vw;
-  margin: 5vh auto !important;
-}
+  .botonInicio {
+    width: 30vw;
+    margin: 4vh auto !important;
+  }
+  .img1{
+    width: 50vw;
+    bottom: 25vh;
+  }
+  .img2{
+    width: 100vw;
+  }
+  .img3{
+    width: 30vw;
+    right: 0vw;
+  }
+  .img4{
+    width: 30vw;
+    left: 10vw;
+  }
 }
 </style>

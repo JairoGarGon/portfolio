@@ -1,19 +1,17 @@
 <template>
   <div class="navigation">
-    <router-link class="botones" href="https://www.linkedin.com/in/jairogargon/" >
-      <span class="text">Linkedin</span>
-      <img class="icons" src="../assets/conoceme.png" alt="icono portada">
+    <router-link  to="https://www.linkedin.com/in/jairogargon/" >
+      <img class="iconosRedes" src="../assets/linkedinLogo.png" alt="icono portada">
     </router-link>
-    <router-link class="botones" href="https://github.com/JairoGarGon" >
-      <span class="text">GitHub</span>
-      <img class="icons" src="../assets/git.png" alt="icono portada">
+    <router-link  to="https://github.com/JairoGarGon" >
+      <img class="iconosRedes" src="../assets/github.png" alt="icono portada">
     </router-link>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
+
     <router-link class="botones" to="/conoceme" :class="{ 'active': $route.path === '/conoceme' }">
       <span class="text">Conóceme</span>
       <img class="icons" :class="{ 'active-icon': $route.path === '/conoceme' }" src="../assets/conoceme.png" alt="icono portada">
@@ -44,21 +42,21 @@ export default {
 <style scoped>
 .navigation {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  animation: down 1s;
-  position: relative;
-  top: 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  animation: derechaMenu 1s;
+  position: fixed;
+  bottom: 4vh;
+  right: 2vw;
   z-index: 2;
 }
 
 .botones {
-  margin: 1vh 2vw !important;
-  height: 50px;
-  width: 50px;
-  box-shadow: -4px -4px 14px rgba(255, 255, 255, 0.6),
-              4px 4px 14px rgba(70, 70, 70, 0.15);
+  margin: 2vh 2vw !important;
+  height: 55px;
+  width: 55px;
+  box-shadow: var(--sombraSuave);
   border-radius: 50%;
   display: flex;
   flex-direction: row-reverse;
@@ -78,8 +76,8 @@ export default {
   opacity: 0;
   display: flex;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   transition: opacity 0.3s ease-in-out;
 }
 .text{
@@ -117,13 +115,20 @@ export default {
   filter:invert(1);
 }
 
-@keyframes down {
+.iconosRedes{
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+
+@keyframes derechaMenu {
   0% {
-    transform: translateY(-200px) rotate(-20deg);
+    transform: translateX(100px) rotate(20deg);
   }
 
   100% {
-    transform: translateY(0rem) rotate(0deg);
+    transform: translateX(0rem) rotate(0deg);
   }
 }
 /* Tablet */
