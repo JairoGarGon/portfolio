@@ -5,8 +5,8 @@
       <p class="textoDescripcion" ref="parrafo1"></p>
     </section>
     
-    <div class="lineaTiempo"></div>
-    
+    <!-- revisar esto -->
+    <!-- <div class="bola"></div> -->
     <section class="lineaTemporal">
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2018)">
@@ -450,9 +450,9 @@
                 </a>
               </div>
             </div>
-
+          </section>
             <p class="tituloCajaProyectos">Mis proyectos tras finalizar en vitesia</p>
-
+          <section class="cajaProyectos">
             <div class="proyecto">
               <img class="imagenProyecto" src="../assets/onlypans.webp" alt="onlyPans">
               <p class="nombreProyecto">OnlyPans</p>
@@ -485,8 +485,7 @@
         </transition>
       </div>
     </section>
-    
-    <img class="flecha" src="../assets/Polygon.webp" alt="dibujo flecha">
+    <!-- <img class="flecha" src="../assets/Polygon.webp" alt="dibujo flecha"> -->
     
     <section class="cajaSaly">
         <img class="imagenDescripcion" src="../assets/SalyCara.webp" alt="diseño de la descripción">
@@ -580,30 +579,32 @@ export default {
   font-size: 2.2em;
   animation: top 2s linear;
 }
-.lineaTiempo{
+/* .bola{
   width: 15px;
   height: 15px;
   border-radius: 100%;
   background-color: var(--color1);
   animation: right 2s linear;
-  margin-left: 14px !important;
-  margin-bottom: 0 !important;
+  margin-left: 20px !important;
 }
 .flecha{
-  margin-left: 14px !important;
+  margin-left: 20px !important;
+  margin-top: 370px !important;
   width: 15px;
   height: 30px;
-  margin-top: 350px !important;
   animation: right 2s linear;
-}
+} */
 
 .lineaTemporal{
+  padding-top: 1vh !important;
+  padding-bottom: 1vh !important;
   animation: right 2s linear;
-  margin-left: 4.5vw !important;
+  margin-left: 25px !important;
   border-left: 4px solid var(--color1);
   padding-left: 5px !important;
   position: absolute;
   z-index: 3;
+  background-color: transparent;
 }
 
 .lineaTemporal_Marcador{
@@ -629,6 +630,7 @@ export default {
 }
 .lineaTemporal_Evento{
   width: 75vw;
+  background-color: transparent;
 }
 .lineaTemporal_Contenido{
   border: 2px solid var(--color1);
@@ -674,7 +676,7 @@ strong{
   flex-direction: column;
   text-align: center;
   width: 30vw;
-  border: 1px solid var(--color1);
+  border: 2px solid var(--color1);
   border-radius: 5px;
 }
 
@@ -717,18 +719,18 @@ strong{
 }
 
 .cajaSaly{
-    position: fixed;
-    bottom: 0;
-  }
-  .imagenDescripcion{   
-    overflow:  hidden !important;
-    z-index: 1 !important;
-    position:fixed;
-    background-color: transparent;
-    left:15vw;
-    bottom: 0;
-    width: 70vw !important;
-    animation: revelarSaly 4s linear forwards;
+  position: fixed;
+  bottom: 0;
+}
+.imagenDescripcion{   
+  overflow:  hidden !important;
+  z-index: 1 !important;
+  position:fixed;
+  background-color: transparent;
+  left:15vw;
+  bottom: 0;
+  width: 70vw !important;
+  animation: revelarSaly 4s linear forwards;
 }
 
 .dibujoflecha{
@@ -768,16 +770,69 @@ strong{
 }
 
 @keyframes revelarSaly {
-    0%{
-        transform: translateY(45%);
-    }
+  0%{
+      transform: translateY(45%);
+  }
 
-    100% {
-        transform: translateY(0%);
+  100% {
+      transform: translateY(0%);
 
-    }
+  }
 }
 
 
-/* faltan mediaquerys */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  
+  .imagenDescripcion{   
+    left:25vw;
+    bottom: 0 !important;
+    width: 45vw !important;
+  }
+  .tituloCajaProyectos, .tareas{
+    font-size: 1.3em;
+  }
+  .formYExp{
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .imagenDescripcion{   
+    left:35vw;
+    bottom: 0 !important;
+    width: 25vw !important;
+  }
+  .lineaTemporal{
+    margin-left: 10vw !important;
+  }
+  /* .bola{
+    width: 20px;
+    height: 20px;
+    margin-left: 95px !important;
+
+  }
+  .flecha{
+    width: 30px;
+    height: 45px;
+    margin-left: 90px !important;
+  } */
+  .cursos, .tituloCajaProyectos, .tareas{
+    padding-left: 2.5vw !important;
+  }
+
+  .tituloCajaProyectos{
+    width: 50vw;
+    font-size: 1.3em;
+  }
+  .nombreProyecto, .textoTech{
+    font-size: 1em;
+  }
+  .imagenProyecto {
+    height: 30vh;
+  }
+  .botonTienda{
+  width: 15vw;
+}
+}
+
 </style>
