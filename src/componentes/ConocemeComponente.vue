@@ -8,7 +8,7 @@
     </section>
     <section class="cajaSaly">
         <img class="imagenDescripcion" src="../assets/Saly.webp" alt="diseño de la descripción">
-        <img class="dibujoflecha" ref="dibujoflecha" src="../assets/down.png" alt="dibujo flecha" v-if="mostrarFlecha" :class="{ 'show': mostrarFlecha }">
+        <img class="dibujoflecha" src="../assets/down.webp" alt="dibujo flecha" v-if="mostrarFlecha" :class="{ 'show': mostrarFlecha }">
     </section>
     <MenuWeb />
   </section>
@@ -18,7 +18,7 @@
 import MenuWeb from '../componentes/MenuWeb.vue'
 
 export default {
-    name: 'ContactoView',
+    name: 'ConocemeComponente',
         components: {
             MenuWeb,
         },
@@ -104,10 +104,10 @@ export default {
 }
 
 .textoDescripcion{
-    font-size:.8rem;
+    font-size:.75em;
     font-weight: 600;
     color:var(--color1);
-    letter-spacing: 2px; 
+    letter-spacing: 1px; 
     margin-bottom: 2vh !important;
     padding:5px 10px !important;
     font-family:var(--fuenteTextos);
@@ -139,9 +139,9 @@ export default {
 }
 
 .dibujoflecha{
-    width: 50px !important;
+    width: 40px !important;
     position: fixed;
-    bottom: 17vh;
+    bottom: 18vh;
     right: 20vw;
     animation: bounce 2.5s infinite;
     transition: opacity 0.5s ease-in-out; 
@@ -233,7 +233,7 @@ export default {
     }
     .ultimo{
         width: 50vw;
-        
+        margin-left: 25vw !important;
     }
 
     .imagenDescripcion{   
@@ -244,7 +244,7 @@ export default {
 
     .dibujoflecha{
         bottom: 16vh;
-        right: 10vw;
+        right:8vw;
     }
 }
 </style>

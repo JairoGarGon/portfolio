@@ -1,11 +1,11 @@
 <template>
   <div class="navigation">
-    <router-link  to="https://www.linkedin.com/in/jairogargon/" >
-      <img class="iconosRedes" src="../assets/linkedinLogo.png" alt="icono portada">
-    </router-link>
-    <router-link  to="https://github.com/JairoGarGon" >
-      <img class="iconosRedes" src="../assets/github.png" alt="icono portada">
-    </router-link>
+    <a  to="https://www.linkedin.com/in/jairogargon/" >
+      <img class="iconosRedes" src="../assets/linkedinLogo.webp" alt="icono portada">
+    </a>
+    <a  to="https://github.com/JairoGarGon" >
+      <img class="iconosRedes" src="../assets/github.webp" alt="icono portada">
+    </a>
     <br>
     <br>
     <br>
@@ -14,15 +14,15 @@
 
     <router-link class="botones" to="/conoceme" :class="{ 'active': $route.path === '/conoceme' }">
       <span class="text">Conóceme</span>
-      <img class="icons" :class="{ 'active-icon': $route.path === '/conoceme' }" src="../assets/conoceme.png" alt="icono portada">
+      <img class="icons" :class="{ 'active-icon': $route.path === '/conoceme' }" src="../assets/conoceme.webp" alt="icono portada">
     </router-link>
     <router-link class="botones" to="/formacion" :class="{ 'active': $route.path === '/formacion' }">
       <span class="text">Formación</span>
-      <img class="icons" :class="{ 'active-icon': $route.path === '/formacion' }" src="../assets/estudios.png" alt="icono portada">
+      <img class="icons" :class="{ 'active-icon': $route.path === '/formacion' }" src="../assets/estudios.webp" alt="icono portada">
     </router-link>
     <router-link class="botones" to="/contacto" :class="{ 'active': $route.path === '/contacto' }">
       <span class="text">Contácto</span>
-      <img class="icons" :class="{ 'active-icon': $route.path === '/contacto' }" src="../assets/contacto.png" alt="icono portada">
+      <img class="icons" :class="{ 'active-icon': $route.path === '/contacto' }" src="../assets/contacto.webp" alt="icono portada">
     </router-link>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
   background-color: transparent;
   animation: derechaMenu 1s;
   position: fixed;
-  bottom: 4vh;
+  bottom: 3vh;
   right: 2vw;
   z-index: 2;
 }
@@ -116,7 +116,7 @@ export default {
 }
 
 .iconosRedes{
-  background-color: transparent;
+  background-color: transparent !important;
   width: 60px;
   height: 60px;
 }
