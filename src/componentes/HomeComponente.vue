@@ -2,7 +2,13 @@
   <div class="inicio">
     <h1 class="texto1">Jairo García González</h1>
     <h2 class="texto2">Front End Developer</h2>
-    <router-link class="botonInicio" to="/conoceme">Conozcámonos</router-link>
+      <router-link class="botonInicio animated-button1" to="/conoceme">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Conozcámonos
+      </router-link>
     <img class="img1" src="../assets/1.webp" alt="diseño papeles">
     <img  class="img2" src="../assets/2.webp" alt="diseño escritorio">
     <img  class="img3" src="../assets/3.webp" alt="diseño lampara">
@@ -56,7 +62,7 @@ export default {
   animation: revelarBoton 1.5s;
   height: 5vh;
   width: 80vw;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: var(--color1);
   border: var(--borde);
   color: var(--color4);
@@ -104,6 +110,99 @@ export default {
   bottom: 0;
   left: -20vw;
   animation: mostrarMueble 2s linear;
+}
+
+.animated-button1 {
+  display: inline-block;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+}
+.animated-button1 span {
+  position: absolute;
+}
+
+.animated-button1 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(43, 8, 8, 0)), to(var(--color2)));
+  background: linear-gradient(to left, rgba(43, 8, 8, 0), var(--color2));
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+.animated-button1 span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(43, 8, 8, 0)), to(var(--color2)));
+  background: linear-gradient(to top, rgba(43, 8, 8, 0), var(--color2));
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+.animated-button1 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(43, 8, 8, 0)), to(var(--color2)));
+  background: linear-gradient(to right, rgba(43, 8, 8, 0), var(--color2));
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+.animated-button1 span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 8, 8, 0)), to(var(--color2)));
+  background: linear-gradient(to bottom, rgba(43, 8, 8, 0), var(--color2));
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
 }
 
 
@@ -170,7 +269,7 @@ export default {
   }
 }
 
-/* Media Queries para diferentes tamaños de pantalla */
+
 
 
 /* Tablet */
@@ -203,7 +302,7 @@ export default {
   }
 
   .botonInicio {
-    width: 30vw;
+    width: 20vw;
     margin: 4vh auto !important;
   }
   .img1{

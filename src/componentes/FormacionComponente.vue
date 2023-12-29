@@ -595,12 +595,13 @@ export default {
   animation: right 2s linear;
 } */
 
+/* revisar para añadir bola y flecha */
 .lineaTemporal{
   padding-top: 1vh !important;
   padding-bottom: 1vh !important;
   animation: right 2s linear;
   margin-left: 25px !important;
-  border-left: 4px solid var(--color1);
+  border-left: 4px dotted var(--color1);
   padding-left: 5px !important;
   position: absolute;
   z-index: 3;
@@ -832,6 +833,9 @@ strong{
   }
   .botonTienda{
   width: 15vw;
+}
+.dibujoflecha{
+    right: 8vw;
 }
 }
 
