@@ -564,7 +564,6 @@ export default {
 .formYExp{
   width: 100%;
   padding-top: 4vh !important;
-  padding-right: 4vw !important;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -578,6 +577,10 @@ export default {
   font-family: var(--fuenteTitulos);
   font-size: 2.2em;
   animation: top 2s linear;
+}
+.textoDescripcion{
+  width: 85%;
+  padding: 10px 15px !important;
 }
 /* .bola{
   width: 15px;

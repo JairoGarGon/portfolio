@@ -83,7 +83,6 @@ export default {
 .conoceme{
     width: 100%;
     padding-top: 4vh !important;
-    padding-right: 4vw !important;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -99,8 +98,11 @@ export default {
     animation: right 2s linear;
 }
 .cajaTextos{
-    margin-left: 4vw !important;
-    margin-top: 2vh !important;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 2vh !important;
 }
 
 .textoDescripcion{
@@ -109,9 +111,9 @@ export default {
     color:var(--color1);
     letter-spacing: 1px; 
     margin-bottom: 2vh !important;
-    padding:5px 10px !important;
+    padding: 10px 15px !important;
     font-family:var(--fuenteTextos);
-    width:90vw;
+    width:85vw;
     height:auto;
     border-radius: 5px;
     box-shadow: var(--sombraSuave)
@@ -119,7 +121,7 @@ export default {
 
 
 .ultimo{
-    width: 58vw;
+    width: 55vw;
     margin-left: 22vw !important;
 }
 
@@ -134,7 +136,7 @@ export default {
     z-index: 1;
     left:-15vw;
     bottom: -5px !important;
-    width: 90vw !important;
+    width: 85vw !important;
     animation: revelarSaly 2s linear forwards;
 }
 

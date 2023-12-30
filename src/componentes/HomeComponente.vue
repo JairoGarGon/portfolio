@@ -113,7 +113,6 @@ export default {
 }
 
 .animated-button1 {
-  display: inline-block;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   overflow: hidden;

@@ -1,9 +1,9 @@
 <template>
   <div class="navigation">
-    <a  to="https://www.linkedin.com/in/jairogargon/" >
+    <a class="btnRedes" href="https://www.linkedin.com/in/jairogargon/" >
       <img class="iconosRedes" src="../assets/linkedinLogo.webp" alt="icono portada">
     </a>
-    <a  to="https://github.com/JairoGarGon" >
+    <a class="btnRedes" href="https://github.com/JairoGarGon" >
       <img class="iconosRedes" src="../assets/github.webp" alt="icono portada">
     </a>
     <br>
@@ -114,11 +114,14 @@ export default {
   /* color: var(--color3) !important; */
   filter:invert(1);
 }
-
+.btnRedes{
+  background-color: transparent !important;
+}
 .iconosRedes{
   background-color: transparent !important;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px !important;
 }
 
 
