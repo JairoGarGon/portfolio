@@ -73,19 +73,21 @@ export default {
 
 <style scoped>
 .mensaje-exito {
+  text-align: center;
   color: green;
 }
 
 .mensaje-error {
+  text-align: center;
   color: red;
 }
 .seccionContacto{
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start
+  align-content: center;
+  flex-direction: column;
 }
 .contacto{
   padding-top: 4vh !important;
@@ -110,6 +112,7 @@ export default {
   width: 70vw;
   margin-top: 6vh !important;
   display: flex;
+  z-index: 2;
   flex-direction: column;
   padding: 2vh 5vw !important;
   border-radius: 20px 20px 20px 0;

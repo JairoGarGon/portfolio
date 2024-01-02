@@ -579,8 +579,9 @@ export default {
   animation: top 2s linear;
 }
 .textoDescripcion{
-  width: 85%;
-  padding: 10px 15px !important;
+  margin-top: 1vh !important;
+  width: 80vw;
+  padding: 10px !important;
 }
 /* .bola{
   width: 15px;

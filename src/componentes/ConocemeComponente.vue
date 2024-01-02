@@ -110,10 +110,11 @@ export default {
     font-weight: 600;
     color:var(--color1);
     letter-spacing: 1px; 
+    margin-top: 1vh !important;
     margin-bottom: 2vh !important;
-    padding: 10px 15px !important;
+    padding: 10px  !important;
     font-family:var(--fuenteTextos);
-    width:85vw;
+    width:80vw;
     height:auto;
     border-radius: 5px;
     box-shadow: var(--sombraSuave)
@@ -121,7 +122,7 @@ export default {
 
 
 .ultimo{
-    width: 55vw;
+    width: 50vw;
     margin-left: 22vw !important;
 }
 
