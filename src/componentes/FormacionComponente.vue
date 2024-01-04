@@ -810,6 +810,9 @@ strong{
   .lineaTemporal{
     margin-left: 10vw !important;
   }
+  .cajaTextos{
+    margin-left: 1vw !important;
+  }
   /* .bola{
     width: 20px;
     height: 20px;

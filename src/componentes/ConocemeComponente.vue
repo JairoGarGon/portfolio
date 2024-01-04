@@ -137,7 +137,7 @@ export default {
     z-index: 1;
     left:-15vw;
     bottom: -5px !important;
-    width: 85vw !important;
+    width: 75vw !important;
     animation: revelarSaly 2s linear forwards;
 }
 
