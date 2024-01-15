@@ -475,17 +475,18 @@
                 <img class="icon" src="../assets/vue.webp" alt="logo de vue">
                 <img class="icon" src="../assets/firebase.webp" alt="logo de firebase">
               </div>
-              <p class="textoTech">Ver en:</p>
-                <a target="_blank" href="https://github.com/JairoGarGon/wikibloq" rel="noreferrer">
-                  <img class="icon" src="../assets/github.webp" alt="icono enlace a github">
-                </a>
+              <p class="textoTech">Visitar la web:</p>
+                <div class="iconosVer">
+                  <a target="_blank" href="https://wikibloq.netlify.app/" rel="noreferrer">
+                    <img class="icon" src="../assets/iconoWeb.webp" alt="icono enlace a la web">
+                  </a>
+                </div>
             </div>
           </section>
           </div>
         </transition>
       </div>
     </section>
-    <!-- <img class="flecha" src="../assets/Polygon.webp" alt="dibujo flecha"> -->
     
     <section class="cajaSaly">
         <img class="imagenDescripcion" src="../assets/SalyCara.webp" alt="diseño de la descripción">
