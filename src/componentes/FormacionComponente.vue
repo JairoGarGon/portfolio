@@ -4,24 +4,24 @@
     <section class="cajaTextos" ref="cajaTextos">
       <p class="textoDescripcion" ref="parrafo1"></p>
     </section>
-    
-    <!-- revisar esto -->
-    <!-- <div class="bola"></div> -->
+
     <section class="lineaTemporal">
+      <!-- 2018 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2018)">
           2018
         </div>
         <transition name="expand">
           <div v-if="expandirPanel === 2018" class="lineaTemporal_Contenido">
-            <p class="tituloCajaProyectos">Mís comienzos en la programación</p>
-              <p class="cursos"><strong>"Principios de Programación"</strong><br>50 horas - Universidad Juan Carlos 3º de Madrid</p>
-              <p class="cursos"><strong>"Pruebas de testing en Software"</strong><br>10 horas- Edutin Academy</p>
-              <p class="cursos"><strong>"Programación Java"</strong><br>45 horas - Píldoras Informáticas</p>
+            <p class="tituloCajaProyectos">Mis comienzos en la programación</p>
+            <p class="cursos"><strong>"Principios de Programación"</strong><br>50 horas - Universidad Juan Carlos 3º de Madrid</p>
+            <p class="cursos"><strong>"Pruebas de testing en Software"</strong><br>10 horas- Edutin Academy</p>
+            <p class="cursos"><strong>"Programación Java"</strong><br>45 horas - Píldoras Informáticas</p>
           </div>
         </transition>
       </div>
 
+      <!-- 2019 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2019)">
           2019
@@ -29,12 +29,12 @@
         <transition name="expand">
           <div v-if="expandirPanel === 2019" class="lineaTemporal_Contenido">
             <p class="tituloCajaProyectos">Tras probar con Java, descubro el desarrollo web</p>
-              <p class="cursos"><strong>"Buen código Java"</strong><br>25 horas - Universidad Juan Carlos 3º de Madrid</p>
-              <p class="cursos"><strong>"Programación Java"</strong><br>30 horas - Universidad Autonoma de Mexico</p>
-              <p class="cursos"><strong>"Programación en Java con NetBeans"</strong><br>34 horas - Edutin Academy</p>
-              <p class="cursos"><strong>"HTML 5"</strong><br>30 horas - Píldoras Informáticas</p>
+            <p class="cursos"><strong>"Buen código Java"</strong><br>25 horas - Universidad Juan Carlos 3º de Madrid</p>
+            <p class="cursos"><strong>"Programación Java"</strong><br>30 horas - Universidad Autonoma de Mexico</p>
+            <p class="cursos"><strong>"Programación en Java con NetBeans"</strong><br>34 horas - Edutin Academy</p>
+            <p class="cursos"><strong>"HTML 5"</strong><br>30 horas - Píldoras Informáticas</p>
 
-          <p class="tituloCajaProyectos">Proyectos de prueba</p>
+            <p class="tituloCajaProyectos">Proyectos de prueba</p>
 
             <section class="cajaProyectos">
               <div class="proyecto">
@@ -56,6 +56,7 @@
                   </a>
                 </div>
               </div>
+
               <div class="proyecto">
                 <img class="imagenProyecto" src="../assets/buscaImagenes.webp" alt="Buscador de imagenes">
                 <p class="nombreProyecto">Buscador de imagenes</p>
@@ -77,7 +78,7 @@
               </div>
 
               <div class="proyecto">
-                <img class="imagenProyecto" src="../assets/seguros.webp" alt="Buscador de imagenes">
+                <img class="imagenProyecto" src="../assets/seguros.webp" alt="Calculador de seguros">
                 <p class="nombreProyecto">Calculador de seguros</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
@@ -97,7 +98,7 @@
               </div>
 
               <div class="proyecto">
-                <img class="imagenProyecto" src="../assets/inmobiliaria.webp" alt="Buscador de imagenes">
+                <img class="imagenProyecto" src="../assets/inmobiliaria.webp" alt="Inmobiliaria ficticia">
                 <p class="nombreProyecto">Inmobiliaria ficticia</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
@@ -120,6 +121,7 @@
         </transition>
       </div>
 
+      <!-- 2020 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2020)">
           2020
@@ -130,7 +132,7 @@
             <p class="cursos"><strong>"JavaScript Moderno"</strong><br>37,5 horas - Udemy</p>
             <p class="cursos"><strong>"CSS3 edición 2020"</strong><br>13 horas - Udemy</p>
             <p class="cursos"><strong>"Desarrollo Web Completo"</strong><br>55 horas - Udemy</p>
-            <p class="cursos"><strong>"Creación de Aplicaciones con Técnologias Web"</strong><br> - 580 horas - Grupo Carac</p>
+            <p class="cursos"><strong>"Creación de Aplicaciones con Tecnologías Web"</strong><br> 580 horas - Grupo Carac</p>
 
             <p class="tituloCajaProyectos">Mi Primer proyecto real</p>
             <section class="cajaProyectos">
@@ -153,7 +155,7 @@
             <p class="tituloCajaProyectos">Mi trabajo en Grupo Carac</p>
             <p class="cursos"><strong>Front End Developer</strong> <br> 2 meses- Grupo Carac</p>
             <section class="cajaProyectos">
-              <p class="tareas"><strong>Tareas:</strong> Desarrollo web con wordpress, campañas de email marketing, SEO, desarrollo de chat bot y analitica web</p>
+              <p class="tareas"><strong>Tareas:</strong> Desarrollo web con WordPress, campañas de email marketing, SEO, desarrollo de chat bot y analítica web.</p>
               <div class="proyecto">
                 <img class="imagenProyecto" src="../assets/fabero.webp" alt="web del ayuntamiento de Fabero">
                 <p class="nombreProyecto">Ayuntamiento de Fabero</p>
@@ -173,6 +175,7 @@
         </transition>
       </div>
 
+      <!-- 2021 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2021)">
           2021
@@ -185,13 +188,13 @@
             <p class="cursos"><strong>"Máster en Diseño UX"</strong><br> 15 horas - Udemy</p>
             <p class="cursos"><strong>"Git y GitHub"</strong><br>5 horas - Udemy</p>
 
-            <p class="tituloCajaProyectos">Mi trabajo en Gerico Muro Associates</p>
-              <p class="cursos"><strong>Full Stack Developer</strong><br>3 meses- Grupo Carac</p>
-              <p class="tareas"><strong>Tareas:</strong>Desarrollo webs con wordpress, análisis web, campañas de marketing, SEO, diseño de recursos, gestión de dominios y documentación.</p>
+            <p class="tituloCajaProyectos">Mi trabajo en Géricó Associates</p>
+              <p class="cursos"><strong>Full Stack Developer</strong><br>3 meses - Géricó Associates</p>
+              <p class="tareas"><strong>Tareas:</strong> Desarrollo webs con WordPress, análisis web, campañas de marketing, SEO, diseño de recursos, gestión de dominios y documentación.</p>
             <section class="cajaProyectos">
               <div class="proyecto">
                 <img class="imagenProyecto" src="../assets/gerico.webp" alt="web de Gerico Muro Abogados">
-                <p class="nombreProyecto">Gerico Muro Abogados</p>
+                <p class="nombreProyecto">Géricó Associates</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
                   <img class="icon" src="../assets/wordpress.webp" alt="logo de wordpress">
@@ -205,7 +208,7 @@
               </div>
               <div class="proyecto">
                 <img class="imagenProyecto" src="../assets/cecamagan.webp" alt="web de Cecamagan Abogados">
-                <p class="nombreProyecto">Cecamagan Abogados</p>
+                <p class="nombreProyecto">Ceca Magán Abogados</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
                   <img class="icon" src="../assets/wordpress.webp" alt="logo de wordpress">
@@ -219,7 +222,7 @@
               </div>
               <div class="proyecto">
                 <img class="imagenProyecto" src="../assets/martin.webp" alt="web de Martín Garro Abogados">
-                <p class="nombreProyecto">Martín Garro Abogados</p>
+                <p class="nombreProyecto">Martín Ortega & Garro</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
                   <img class="icon" src="../assets/wordpress.webp" alt="logo de wordpress">
@@ -232,8 +235,8 @@
                 </div>
               </div>
               <div class="proyecto">
-                <img class="imagenProyecto" src="../assets/fashion.webp" alt="web de Fashion Businnes Abogados">
-                <p class="nombreProyecto">Fashion Businnes Abogados</p>
+                <img class="imagenProyecto" src="../assets/fashion.webp" alt="web de Fashion Business Lawyer">
+                <p class="nombreProyecto">Fashion Business Lawyer</p>
                 <p class="textoTech">Creado con:</p>
                 <div class="icons">
                   <img class="icon" src="../assets/wordpress.webp" alt="logo de wordpress">
@@ -246,11 +249,11 @@
                 </div>
               </div>
             </section>
-
           </div>
         </transition>
       </div>
 
+      <!-- 2022 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2022)">
           2022
@@ -260,11 +263,11 @@
             <h3 class="tituloCajaProyectos">Vue, Ionic y los entresijos de las plataformas.</h3>
             <p class="cursos"><strong>"Introducción Vue js 2"</strong><br>15 horas - Udemy</p>
             <p class="cursos"><strong>"Vue JS 2"</strong><br> 10 horas - Udemy</p>
-            <p class="cursos"><strong>"Ionic, aplicaciones para IOS y Android"</strong><br>10 horas - Udemy</p>
+            <p class="cursos"><strong>"Ionic, aplicaciones para iOS y Android"</strong><br>10 horas - Udemy</p>
 
-              <p class="tituloCajaProyectos">Mi trabajo en Vitesia Mobile Solutions</p>
-              <p class="cursos"><strong>Front End Developer</strong><br>1 año y 2 meses- Vitesia</p>
-                <p class="tareas"><strong>Tareas: </strong>Desarrollo webs y Apps con Vue, evolutivos e incidencias con Vue o React, mejoras de usabilidad y accesibilidad, migraciónes de Sencha a Vue, SEO, diseño de recursos, control de versiones, investigación y documentación.</p>
+            <p class="tituloCajaProyectos">Mi trabajo en Vitesia Mobile Solutions</p>
+            <p class="cursos"><strong>Front End Developer</strong><br>1 año y 2 meses - Vitesia</p>
+            <p class="tareas"><strong>Tareas: </strong>Desarrollo webs y Apps con Vue, evolutivos e incidencias con Vue o React, mejoras de usabilidad y accesibilidad, migraciones de Sencha a Vue, SEO, diseño de recursos, control de versiones, investigación y documentación.</p>
 
             <section class="cajaProyectos">
                 <div class="proyecto">
@@ -307,7 +310,7 @@
 
                 <div class="proyecto">
                   <img class="imagenProyecto" src="../assets/scs.webp" alt="Aplicación del servicio cantabro de salud">
-                  <p class="nombreProyecto">Servicio Cantabro de Salud</p>
+                  <p class="nombreProyecto">Servicio Cántabro de Salud</p>
                   <p class="textoTech">Creado con:</p>
                   <div class="icons">
                     <img class="icon" src="../assets/vue.webp" alt="logo de vue">
@@ -364,7 +367,7 @@
 
                 <div class="proyecto">
                   <img class="imagenProyecto" src="../assets/ccoo.webp" alt="comisiones obreras asturias">
-                  <p class="nombreProyecto">CC:OO Asturias</p>
+                  <p class="nombreProyecto">CC.OO Asturias</p>
                   <p class="textoTech">Creado con:</p>
                   <div class="icons">
                     <img class="icon" src="../assets/vue.webp" alt="logo de vue">
@@ -376,116 +379,172 @@
                     </a>
                   </div>
                 </div>
-
             </section>
           </div>
         </transition>
-        </div>
+      </div>
 
+      <!-- 2023 -->
       <div class="lineaTemporal_Evento">
         <div class="lineaTemporal_Marcador" @click="verAnio(2023)">
           2023
         </div>
         <transition name="expand">
           <div v-if="expandirPanel === 2023" class="lineaTemporal_Contenido">
-            <h3 class="tituloCajaProyectos">Mejorando el diseño, pruebas con apis, pruebas de carga, etc...</h3>
+            <h3 class="tituloCajaProyectos">Mejorando el diseño, pruebas con APIs, pruebas de carga y desarrollo independiente</h3>
             <p class="cursos"><strong>"Figma diseño de Interfaces"</strong><br>5 horas - Udemy</p>
-            <p class="cursos"><strong>"Postman APi Testing"</strong><br> 5 horas - Udemy</p>
+            <p class="cursos"><strong>"Postman API Testing"</strong><br> 5 horas - Udemy</p>
             <p class="cursos"><strong>"Vue 2 y 3"</strong><br>15 horas - Udemy</p>
 
-          <section class="cajaProyectos">
-            <div class="proyecto">
-              <img class="imagenProyecto" src="../assets/trafikoapp.webp" alt="trafikoapp">
-              <p class="nombreProyecto">Trafikoa EJGV</p>
-              <p class="textoTech">Creado con:</p>
-              <div class="icons">
-                <img class="icon" src="../assets/vue.webp" alt="logo de vue">
-                <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
-              </div>
-              <p class="textoTech">Disponible en:</p>
-              <div class="botonesTiendas">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.TrafikoaEJGV" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
-                </a>
-                <a target="_blank" href="https://apps.apple.com/us/app/trafikoaejgv/id771607379?l=es&ls=1" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
-                </a>
-              </div>
-            </div>
-
-            <div class="proyecto">
-              <img class="imagenProyecto" src="../assets/barakaldo.webp" alt="barakaldoapp">
-              <p class="nombreProyecto">Barakaldo App</p>
+            <section class="cajaProyectos">
+              <div class="proyecto">
+                <img class="imagenProyecto" src="../assets/trafikoapp.webp" alt="trafikoapp">
+                <p class="nombreProyecto">Trafikoa EJGV</p>
                 <p class="textoTech">Creado con:</p>
-              <div class="icons">
-                <img class="icon" src="../assets/vue.webp" alt="logo de vue">
-                <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
+                <div class="icons">
+                  <img class="icon" src="../assets/vue.webp" alt="logo de vue">
+                  <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
+                </div>
+                <p class="textoTech">Disponible en:</p>
+                <div class="botonesTiendas">
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.TrafikoaEJGV" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
+                  </a>
+                  <a target="_blank" href="https://apps.apple.com/us/app/trafikoaejgv/id771607379?l=es&ls=1" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
+                  </a>
+                </div>
               </div>
-              <p class="textoTech">Disponible en:</p>
-              <div class="botonesTiendas">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.barakaldo.app&hl=en_US" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
-                </a>
-                <a target="_blank" href="https://apps.apple.com/es/app/barakaldoapp/id1447621341" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
-                </a>
-              </div>
-            </div>
 
-            <div class="proyecto">
-              <img class="imagenProyecto" src="../assets/reusapp.webp" alt="reusapp">
-              <p class="nombreProyecto">Reusapp</p>
-              <p class="textoTech">Creado con:</p>
-              <div class="icons">
-                <img class="icon" src="../assets/vue.webp" alt="logo de vue">
-                <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
+              <div class="proyecto">
+                <img class="imagenProyecto" src="../assets/barakaldo.webp" alt="barakaldoapp">
+                <p class="nombreProyecto">Barakaldo App</p>
+                <p class="textoTech">Creado con:</p>
+                <div class="icons">
+                  <img class="icon" src="../assets/vue.webp" alt="logo de vue">
+                  <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
+                </div>
+                <p class="textoTech">Disponible en:</p>
+                <div class="botonesTiendas">
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.barakaldo.app&hl=en_US" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
+                  </a>
+                  <a target="_blank" href="https://apps.apple.com/es/app/barakaldoapp/id1447621341" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
+                  </a>
+                </div>
               </div>
-              <p class="textoTech">Disponible en:</p>
-              <div class="botonesTiendas">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.EMULSA&hl=es&gl=US" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
-                </a>
-                <a target="_blank" href="https://apps.apple.com/es/app/emulsa-reusapp/id705864040" rel="noreferrer">
-                  <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
-                </a>
-              </div>
-            </div>
-          </section>
-            <p class="tituloCajaProyectos">Mis proyectos tras finalizar en vitesia</p>
-          <section class="cajaProyectos">
-            <div class="proyecto">
-              <img class="imagenProyecto" src="../assets/onlypans.webp" alt="onlyPans">
-              <p class="nombreProyecto">OnlyPans</p>
-              <p class="textoTech">Creado con:</p>
-              <div class="icons">
-                <img class="icon" src="../assets/vue.webp" alt="logo de vue">
-                <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
-              </div>
-              <p class="textoTech">Ver en:</p>
-                <a target="_blank" href="https://github.com/JairoGarGon/OnlyPansApp" rel="noreferrer">
-                  <img class="icon" src="../assets/github.webp" alt="icono enlace a github">
-                </a>
-            </div>
 
-            <div class="proyecto">
-              <img class="imagenProyecto" src="../assets/wikibloq.webp" alt="wikibloq">
-              <p class="nombreProyecto">WikiBloq</p>
-              <p class="textoTech">Creado con:</p>
-              <div class="icons">
-                <img class="icon" src="../assets/vue.webp" alt="logo de vue">
-                <img class="icon" src="../assets/firebase.webp" alt="logo de firebase">
+              <div class="proyecto">
+                <img class="imagenProyecto" src="../assets/reusapp.webp" alt="reusapp">
+                <p class="nombreProyecto">Reusapp</p>
+                <p class="textoTech">Creado con:</p>
+                <div class="icons">
+                  <img class="icon" src="../assets/vue.webp" alt="logo de vue">
+                  <img class="icon" src="../assets/ionic.webp" alt="logo de ionic">
+                </div>
+                <p class="textoTech">Disponible en:</p>
+                <div class="botonesTiendas">
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.vitesia.EMULSA&hl=es&gl=US" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/googlePlay.webp" alt="enlace play store">
+                  </a>
+                  <a target="_blank" href="https://apps.apple.com/es/app/emulsa-reusapp/id705864040" rel="noreferrer">
+                    <img class="botonTienda" src="../assets/appleStore.webp" alt="enlace apple store">
+                  </a>
+                </div>
               </div>
-              <p class="textoTech">Visitar la web:</p>
+            </section>
+
+            <p class="tituloCajaProyectos">Desarrollador de aplicaciones independiente</p>
+            <p class="cursos"><strong>Desarrollador Freelance</strong><br>6 meses (Jul 2023 - Dic 2023) - OnlyPans</p>
+            
+            <section class="cajaProyectos">
+              <div class="proyecto">
+                <img class="imagenProyecto" src="../assets/onlypans.webp" alt="OnlyPans">
+                <p class="nombreProyecto">OnlyPans App</p>
+                <p class="textoTech">Creado con:</p>
+                <div class="icons">
+                  <img class="icon" src="../assets/vue.webp" alt="logo de vue">
+                  <img class="icon" src="../assets/firebase.webp" alt="logo de firebase">
+                </div>
+                <p class="textoTech">Ver en:</p>
+                <div class="iconosVer">
+                  <a target="_blank" href="https://github.com/JairoGarGon/OnlyPansApp" rel="noreferrer">
+                    <img class="icon" src="../assets/github.webp" alt="icono enlace a github">
+                  </a>
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <img class="imagenProyecto" src="../assets/wikibloq.webp" alt="WikiBloq">
+                <p class="nombreProyecto">WikiBloq</p>
+                <p class="textoTech">Creado con:</p>
+                <div class="icons">
+                  <img class="icon" src="../assets/vue.webp" alt="logo de vue">
+                  <img class="icon" src="../assets/firebase.webp" alt="logo de firebase">
+                </div>
+                <p class="textoTech">Visitar la web:</p>
                 <div class="iconosVer">
                   <a target="_blank" href="https://wikibloq.netlify.app/" rel="noreferrer">
                     <img class="icon" src="../assets/iconoWeb.webp" alt="icono enlace a la web">
                   </a>
                 </div>
-            </div>
-          </section>
+              </div>
+            </section>
           </div>
         </transition>
       </div>
+
+      <!-- 2024 -->
+      <div class="lineaTemporal_Evento">
+        <div class="lineaTemporal_Marcador" @click="verAnio(2024)">
+          2024
+        </div>
+        <transition name="expand">
+          <div v-if="expandirPanel === 2024" class="lineaTemporal_Contenido">
+            <h3 class="tituloCajaProyectos">Desarrollo Interno, Gestión y Soporte Técnico</h3>
+            <p class="cursos"><strong>Especialista en Sistemas y Soporte Técnico</strong><br>2 años (Feb. 2024 - Feb. 2026) — BTP ONETec</p>
+            <p class="tareas"><strong>Tareas:</strong> Desarrollo de aplicaciones de uso interno, automatización de procesos operativos, administración de bases de datos y gestión de usuarios. Gestión y ejecución de campañas masivas (SMS y Email Marketing) e investigación/resolución de incidencias técnicas en entorno productivo.</p>
+          </div>
+        </transition>
+      </div>
+
+      <!-- 2025 -->
+      <div class="lineaTemporal_Evento">
+        <div class="lineaTemporal_Marcador" @click="verAnio(2025)">
+          2025
+        </div>
+        <transition name="expand">
+          <div v-if="expandirPanel === 2025" class="lineaTemporal_Contenido">
+            <h3 class="tituloCajaProyectos">Consolidación en BTP ONETec e Inmersión en IA</h3>
+            <p class="cursos"><strong>Especialista en Sistemas y Soporte Técnico</strong><br>BTP ONETec (Continuación)</p>
+            <p class="tareas"><strong>Tareas:</strong> Continuación del desarrollo de herramientas internas, soporte, automatizaciones y gestión de bases de datos y campañas.</p>
+
+            <p class="tituloCajaProyectos">Especialización en Automatización e IA Generativa</p>
+            <p class="cursos"><strong>Desarrollo de Scripts e Integración de Agentes</strong></p>
+            <p class="tareas"><strong>Enfoque:</strong> Creación de arquitecturas de automatización en Python combinadas con la integración de LLMs y agentes autónomos de IA.</p>
+          </div>
+        </transition>
+      </div>
+
+      <!-- 2026 -->
+      <div class="lineaTemporal_Evento">
+        <div class="lineaTemporal_Marcador" @click="verAnio(2026)">
+          2026
+        </div>
+        <transition name="expand">
+          <div v-if="expandirPanel === 2026" class="lineaTemporal_Contenido">
+            <h3 class="tituloCajaProyectos">Proyectos Actuales y Emprendimiento Startup</h3>
+            
+            <p class="cursos"><strong>Herramienta Autónoma de Creación de Contenido</strong></p>
+            <p class="tareas"><strong>Desarrollo:</strong> Plataforma automatizada construida en Python respaldada por un ecosistema de agentes IA para generación y distribución programada de contenido.</p>
+
+            <p class="cursos"><strong>Startup "The Nomads" (Co-fundador / Developer)</strong></p>
+            <p class="tareas"><strong>Desarrollo:</strong> Ecosistema digital (Web + App Móvil) orientado a conectar comunidades de nómadas digitales a nivel global.</p>
+          </div>
+        </transition>
+      </div>
+
     </section>
     
     <section class="cajaSaly">
@@ -501,9 +560,9 @@ import MenuWeb from '../componentes/MenuWeb.vue'
 
 export default {
   name: 'FormacionComponente',
-        components: {
-            MenuWeb,
-        },
+  components: {
+    MenuWeb,
+  },
   data() {
     return {
       expandirPanel: null,
@@ -543,12 +602,11 @@ export default {
 
         setTimeout(() => {
           this.mostrarLetra(parrafo, texto, index);
-        }, 50); //velocidad de la animación
-        } else {
+        }, 50);
+      } else {
         this.indexLetra = 0;
         this.indexParrafo++;
-        }
-        
+      }
     },
     mostrarFlechaDespuesDelay() {
       setTimeout(() => {
@@ -556,12 +614,10 @@ export default {
       }, 50000); 
     },
   }
-
 };
 </script>
 
 <style scoped>
-
 .formYExp{
   width: 100%;
   padding-top: 4vh !important;
@@ -584,23 +640,7 @@ export default {
   width: 80vw;
   padding: 10px !important;
 }
-/* .bola{
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: var(--color1);
-  animation: right 2s linear;
-  margin-left: 20px !important;
-}
-.flecha{
-  margin-left: 20px !important;
-  margin-top: 370px !important;
-  width: 15px;
-  height: 30px;
-  animation: right 2s linear;
-} */
 
-/* revisar para añadir bola y flecha */
 .lineaTemporal{
   padding-top: 1vh !important;
   padding-bottom: 1vh !important;
@@ -624,6 +664,7 @@ export default {
   color: var(--color1);
   border: 2px solid var(--color1) !important;
   border-radius: 0 10px 10px 0;
+  cursor: pointer;
 }
 .lineaTemporal_Marcador:active{
   box-shadow: var(--sombraSuave);
@@ -637,6 +678,7 @@ export default {
 .lineaTemporal_Evento{
   width: 75vw;
   background-color: transparent;
+  margin-bottom: 10px;
 }
 .lineaTemporal_Contenido{
   border: 2px solid var(--color1);
@@ -667,8 +709,8 @@ export default {
 strong{
   font-weight: 700 !important;
   font-size: 1.1em !important;
-
 }
+
 .cajaProyectos {
   display: flex;
   flex-wrap: wrap;
@@ -718,6 +760,8 @@ strong{
   color: var(--color1);
   font-family: var(--fuenteTextos);
   padding-bottom: 1vh !important;
+  font-size: .8em;
+  padding-left: 1vw !important;
 }
 
 .botonTienda{
@@ -729,68 +773,49 @@ strong{
   bottom: 0;
 }
 .imagenDescripcion{   
-  overflow:  hidden !important;
+  overflow: hidden !important;
   z-index: 1 !important;
-  position:fixed;
+  position: fixed;
   background-color: transparent;
-  left:15vw;
+  left: 15vw;
   bottom: 0;
   width: 70vw !important;
   animation: revelarSaly 4s linear forwards;
 }
 
 .dibujoflecha{
-    width: 40px !important;
-    position: fixed;
-    bottom: 6vh;
-    right: 20vw;
-    animation: bounce 2.5s infinite;
-    transition: opacity 0.5s ease-in-out; 
-    opacity: 0; 
+  width: 40px !important;
+  position: fixed;
+  bottom: 6vh;
+  right: 20vw;
+  animation: bounce 2.5s infinite;
+  transition: opacity 0.5s ease-in-out; 
+  opacity: 0; 
 }
 .dibujoflecha.show {
-    opacity: 1;
-    z-index: 4;
-    background-color: transparent;
+  opacity: 1;
+  z-index: 4;
+  background-color: transparent;
 }
 
-
-
-
 @keyframes top {
-  0% {
-    transform: translateY(-10vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(-10vh); }
+  100% { transform: translateY(0); }
 }
 
 @keyframes right {
-  0% {
-    transform: translateX(-20rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  0% { transform: translateX(-20rem); }
+  100% { transform: translateX(0); }
 }
 
 @keyframes revelarSaly {
-  0%{
-      transform: translateY(45%);
-  }
-
-  100% {
-      transform: translateY(0%);
-
-  }
+  0%{ transform: translateY(45%); }
+  100% { transform: translateY(0%); }
 }
 
-
 @media screen and (min-width: 600px) and (max-width: 800px) {
-  
   .imagenDescripcion{   
-    left:25vw;
+    left: 25vw;
     bottom: 0 !important;
     width: 45vw !important;
   }
@@ -804,7 +829,7 @@ strong{
 
 @media screen and (min-width: 801px) {
   .imagenDescripcion{   
-    left:35vw;
+    left: 35vw;
     bottom: 0 !important;
     width: 25vw !important;
   }
@@ -814,21 +839,9 @@ strong{
   .cajaTextos{
     margin-left: 1vw !important;
   }
-  /* .bola{
-    width: 20px;
-    height: 20px;
-    margin-left: 95px !important;
-
-  }
-  .flecha{
-    width: 30px;
-    height: 45px;
-    margin-left: 90px !important;
-  } */
   .cursos, .tituloCajaProyectos, .tareas{
     padding-left: 2.5vw !important;
   }
-
   .tituloCajaProyectos{
     width: 50vw;
     font-size: 1.3em;
@@ -840,11 +853,10 @@ strong{
     height: 30vh;
   }
   .botonTienda{
-  width: 15vw;
-}
-.dibujoflecha{
+    width: 15vw;
+  }
+  .dibujoflecha{
     right: 8vw;
+  }
 }
-}
-
 </style>

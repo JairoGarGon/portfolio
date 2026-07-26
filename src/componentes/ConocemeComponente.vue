@@ -18,16 +18,16 @@
 import MenuWeb from '../componentes/MenuWeb.vue'
 
 export default {
-    name: 'ConocemeComponente',
-        components: {
-            MenuWeb,
-        },
-        data() {
+  name: 'ConocemeComponente',
+  components: {
+    MenuWeb,
+  },
+  data() {
     return {
       textos: [
-        "¡Hola, soy Jairo! Con 39 años de experiencia y un entusiasmo inquebrantable por las nuevas tecnologías.",
-        "En la actualidad, me encuentro inmerso en el fascinante mundo del desarrollo Front End.",
-        "Intentando canalizar mi pasión para brindar experiencias únicas y cautivadoras a los usuarios."
+        "¡Hola, soy Jairo! Creador de experiencias digitales y entusiasta de la innovación tecnológica.",
+        "Especializado en ecosistemas Front End, desarrollo de apps y optimización de flujos de trabajo.",
+        "Impulso mis proyectos integrando agentes de IA y automatización para llevar la eficiencia al siguiente nivel."
       ],
       parrafos: [],
       indexParrafo: 0,
@@ -37,18 +37,17 @@ export default {
   },
   mounted() {
     this.parrafos = [this.$refs.parrafo1, this.$refs.parrafo2, this.$refs.parrafo3];
-    this.mostrarParrafosConAnimacion();
+    this.mostrarLetras();
   },
   methods: {
-    async mostrarParrafosConAnimacion() {
-      await this.mostrarLetras();
-      this.mostrarFlechaDespuesDelay();
-    },
     mostrarLetras() {
       if (this.indexParrafo < this.parrafos.length) {
         const parrafoActual = this.parrafos[this.indexParrafo];
+        
+        // Muestra la tarjeta suavemente cuando empieza a escribir
+        parrafoActual.classList.add('activo');
+        
         const texto = this.textos[this.indexParrafo];
-
         this.mostrarLetra(parrafoActual, texto, this.indexLetra);
       }
     },
@@ -59,27 +58,26 @@ export default {
 
         setTimeout(() => {
           this.mostrarLetra(parrafo, texto, index);
-        }, 50); //velocidad de la animación
-        } else {
+        }, 50);
+      } else {
         this.indexLetra = 0;
         this.indexParrafo++;
 
-        setTimeout(() => {
-          this.mostrarLetras();
-        }, 500); 
+        if (this.indexParrafo < this.parrafos.length) {
+          setTimeout(() => {
+            this.mostrarLetras();
+          }, 500); 
+        } else {
+          this.mostrarFlecha = true;
         }
-        
-    },
-    mostrarFlechaDespuesDelay() {
-      setTimeout(() => {
-        this.mostrarFlecha = true;
-      }, 18000); 
-    },
+      }
     }
+  }
 }
 </script>
 
 <style>
+/* CSS Estructura Original */
 .conoceme{
     width: 100%;
     padding-top: 4vh !important;
@@ -97,6 +95,7 @@ export default {
     font-size: 2.2em;
     animation: right 2s linear;
 }
+
 .cajaTextos{
   display: flex;
   flex-direction: column;
@@ -112,14 +111,21 @@ export default {
     letter-spacing: 1px; 
     margin-top: 1vh !important;
     margin-bottom: 2vh !important;
-    padding: 10px  !important;
+    padding: 10px !important;
     font-family:var(--fuenteTextos);
-    width:80vw;
+    width: 80vw;
     height:auto;
     border-radius: 5px;
-    box-shadow: var(--sombraSuave)
+    box-shadow: var(--sombraSuave);
+
+    /* Oculto hasta que empieza la escritura */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
+.textoDescripcion.activo {
+    opacity: 1;
+}
 
 .ultimo{
     width: 50vw;
@@ -130,8 +136,9 @@ export default {
     position: fixed;
     bottom: 0;
 }
+
 .imagenDescripcion{   
-    overflow:  hidden !important;
+    overflow: hidden !important;
     position:fixed;
     background-color: transparent;
     z-index: 1;
@@ -150,6 +157,7 @@ export default {
     transition: opacity 0.5s ease-in-out; 
     opacity: 0; 
 }
+
 .dibujoflecha.show {
     opacity: 1;
 }
@@ -171,7 +179,6 @@ export default {
         opacity: 1;
     }
 }
-
 
 @keyframes revelarSaly {
     0%{
@@ -221,6 +228,7 @@ export default {
     }
 }
 
+/* Escritorio */
 @media screen and (min-width: 801px) {
     .conoceme{
         font-size: 3em;
@@ -231,12 +239,12 @@ export default {
     }
     .textoDescripcion{
         font-size:1.7em;
-        width: 75vw;
+        width: 72vw; /* Alineado para coincidir con la derecha de .ultimo */
         margin-bottom: 4vh !important;
     }
     .ultimo{
         width: 50vw;
-        margin-left: 25vw !important;
+        margin-left: 22vw !important;
     }
 
     .imagenDescripcion{   
